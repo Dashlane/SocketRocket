@@ -349,6 +349,7 @@
 				F6B208291450F597009315AF /* Sources */,
 				F6B2082A1450F597009315AF /* Frameworks */,
 				F6B2082B1450F597009315AF /* Headers */,
+				8FEE58F81B186991006E6B59 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -435,6 +436,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		8FEE58F81B186991006E6B59 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# links Header dir\nif [ \"${TARGET_BUILD_DIR}\" != \"${BUILT_PRODUCTS_DIR}\" ]; then\n  ln -sv \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}\"\nfi\n";
+		};
 		F6BDA800145900D200FE3253 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
